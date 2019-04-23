@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".UserActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewUser"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_outline"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                android:textFontWeight="35dp"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:fontFamily="cursive" />
+
+            <TextView
+                android:id="@+id/textViewBooksNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Number of books: 3"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:stretchColumns="0,1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#930001" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewB1"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewNameBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Think and Grow Rich"
+                            android:textColor="#cc282b"
+                            android:textFontWeight="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textViewAuthor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Author: Napoleon Hill"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textViewGenre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genre: Self-Help" />
+
+                        <TextView
+                            android:id="@+id/textViewPages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pages: 235" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:scrollbars="vertical"
+                            android:stretchColumns="0,1"
+                            >
+                        <TableRow>
+                            <ImageView
+                                android:id="@+id/imageViewLike"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                tools:srcCompat="@tools:sample/avatars"
+                                />
+                            <Button
+                                android:id="@+id/buttonRead"
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="9dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:text="Read"
+                                android:textColor="#ffffff"
+                                android:textFontWeight="bold">
+
+                            </Button>
+
+                        </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_gravity="center"
+                    android:background="#930001" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewB2"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewNameBook2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="The Lord of the Rings"
+                            android:textColor="#cc282b"
+                            android:textFontWeight="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textViewAuthor2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Author: J.R.R. Tolkien"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textViewGenre2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genre: Fantasy" />
+
+                        <TextView
+                            android:id="@+id/textViewPages2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pages: 423" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:scrollbars="vertical"
+                            android:stretchColumns="0,1"
+                            >
+                            <TableRow>
+                                <ImageView
+                                    android:id="@+id/imageViewLike1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_weight="1"
+                                    tools:srcCompat="@tools:sample/avatars"
+                                    />
+                                <Button
+                                    android:id="@+id/buttonRead1"
+                                    android:layout_width="70dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="9dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/shape"
+                                    android:text="Read"
+                                    android:textColor="#ffffff"
+                                    android:textFontWeight="bold">
+
+                                </Button>
+
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_gravity="center"
+                    android:background="#930001" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewB3"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewNameBook3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="The Lost Symbol"
+                            android:textColor="#cc282b"
+                            android:textFontWeight="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textViewAuthor3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Author: Dan Brown"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textViewGenre3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genre: Mystery" />
+
+                        <TextView
+                            android:id="@+id/textViewPages3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pages: 671" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:scrollbars="vertical"
+                            android:stretchColumns="0,1"
+                            >
+                            <TableRow>
+                                <ImageView
+                                    android:id="@+id/imageViewLike2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_weight="1"
+                                    tools:srcCompat="@tools:sample/avatars"
+                                    />
+                                <Button
+                                    android:id="@+id/buttonRead2"
+                                    android:layout_width="70dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="9dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/shape"
+                                    android:text="Read"
+                                    android:textColor="#ffffff"
+                                    android:textFontWeight="bold">
+
+                                </Button>
+
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_gravity="center"
+                    android:background="#930001" />
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonBooks"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shape"
+                android:text="See All Books"
+                android:textColor="#ffffff"
+                android:textFontWeight="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
