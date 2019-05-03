@@ -20,7 +20,7 @@
 <br/>
 <img src="https://github.com/MadlenStoicheva/BookCatalogue/blob/master/Screeenshots/allbooks.jpg">
 <br/>
-<p>РСписък с всички книги</p>
+<p>Списък с всички книги</p>
 <br/>
 <img src="https://github.com/MadlenStoicheva/BookCatalogue/blob/master/Screeenshots/allbooks1.jpg">
 <br/>
