@@ -10,7 +10,7 @@
 <br/>
 <p>Начален Login екран</p>
 <br/>
-<img src="https://github.com/MadlenStoicheva/BookCatalogue/blob/master/Screeenshots/Login.jpg">
+<img src="https://github.com/MadlenStoicheva/BookCatalogue/blob/master/Screeenshots/l1.jpg">
 <br/>
 <p>Register</p>
 <br/>
